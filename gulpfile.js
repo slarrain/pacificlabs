@@ -60,6 +60,7 @@ gulp.task('copy', function() {
 
     gulp.src([
             'node_modules/font-awesome/**',
+            '!node_modules/font-awesome/scss/**',
             '!node_modules/font-awesome/**/*.map',
             '!node_modules/font-awesome/.npmignore',
             '!node_modules/font-awesome/*.txt',
