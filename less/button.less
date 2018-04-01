@@ -1,0 +1,22 @@
+.btn {
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+
+.btn-default {
+    border: 1px solid @primary-blue;
+    color: @primary-blue;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        border: 1px solid @primary-blue;
+        outline: none;
+        color: black;
+        background-color: @primary-blue;
+    }
+}
