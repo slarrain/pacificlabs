@@ -3,7 +3,7 @@ body {
     height: 100%;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
-    background-color: black;
+    background-color: @black;
 }
 
 html {
@@ -36,13 +36,13 @@ p {
 }
 
 a {
-    color: @primary;
+    color: @primary-blue;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken(@primary,20%);
+        color: darken(@primary-blue,20%);
     }
 }
