@@ -1,0 +1,32 @@
+ul.banner-social-buttons {
+    margin-top: 0;
+    @media(max-width:1199px) {
+        margin-top: 15px;
+    }
+    @media(max-width:767px) {
+        li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+ul.list-block {
+  text-align: left;
+  font-size: 18px;
+  list-style: none;
+  li {
+   display: flex;
+   justify-content: left;
+   i{
+     margin: 6px 10px 0 0 ;
+   }
+   p {
+     margin-bottom: 10px;
+   }
+  }
+}
