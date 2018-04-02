@@ -13,8 +13,8 @@
         display: block;
         width: 100%;
         height: 1px;
-        -webkit-transform: rotate(-30deg);
-        transform: rotate(-30deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
         //center the X vertically and horizontally:
         left: 0;
         right: 0;
@@ -35,8 +35,20 @@
   }
   .carousel-control {
     .glyphicon{
-      top: 40%;
+      top: 30%;
     }
     background: none;
   }
+  .carousel-inner{
+    .item .row{
+      display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+}
+
+.quote {
+  font-size: 5rem;
+  color: @grey-dark;
 }

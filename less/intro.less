@@ -6,7 +6,16 @@
     text-align: center;
     color: white;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: black;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: @primary-gradient-dark;
+      opacity: .6;
+    }
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -33,4 +42,4 @@
             }
         }
     }
-} 
+}
