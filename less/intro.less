@@ -5,7 +5,7 @@
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg.jpg) no-repeat bottom center;
     &:before{
       content: '';
       position: absolute;
@@ -13,8 +13,14 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: @primary-gradient-dark;
+      background: @primary-gradient-dark no-repeat bottom center;
+      background-position: bottom;
+      background-size: cover;
       opacity: .6;
+      height: 50%;
+      @media(min-width: @md) {
+        height: 100%;
+      }
     }
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -30,7 +36,7 @@
             font-size: 18px;
         }
     }
-    @media(min-width:768px) {
+    @media(min-width: @md) {
         height: 100%;
         padding: 0;
         .intro-body {
