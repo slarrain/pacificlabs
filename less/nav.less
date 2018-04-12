@@ -2,11 +2,11 @@
     margin-bottom: 0;
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    font-family: @font-secondary;
+    background-color: @black;
     .navbar-toggle {
         color: white;
-        background-color: fade(white, 20%);
+        background-color: @primary-green;
         font-size: 12px;
         &:focus,
         &:active {
@@ -29,7 +29,7 @@
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: fade(white, 80%);
+                    color: @primary-green;
                     outline: none;
                     background-color: transparent;
                 }
