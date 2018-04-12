@@ -58,9 +58,6 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'))
 
-    gulp.src(['node_modules/heatmap/build/heatmap.js', 'node_modules/heatmap/build/heatmap.min.js'])
-        .pipe(gulp.dest('vendor/heatmap'))
-
     gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/scss/**',
