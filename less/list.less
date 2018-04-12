@@ -29,14 +29,33 @@ ul.list-block {
   font-size: 18px;
   list-style: none;
   display: flex;
+  flex-wrap: nowrap;
+  @media (max-width: @xs) {
+    flex-wrap: wrap;
+  }
   justify-content: center;
   padding-left: 0;
   li {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 2%;
+    max-width: 230px;
     & + li {
       border-left: 1px solid @white;
+      @media (max-width: @xs) {
+        border-left: none;
+        //border-top: 1px solid @white;
+        margin-top: 12px;
+        padding-top: 12px;
+        &:before {
+          content: '';
+          margin: -12px auto 18px;
+          width: 60%;
+          height: 1px;
+          //border-radius: 100%;
+          background-color: @white;
+        }
+      }
     }
    i{
      margin: 6px 10px 0 0 ;
