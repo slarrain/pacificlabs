@@ -1,33 +1,3 @@
-@logo-height: 100px;
-.logo-placeholder{
-  height: @logo-height;
-  background-color: @primary-grey;
-  width: 100%;
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    &:before, &:after {
-        position: absolute;
-        content: '';
-        background: white;
-        display: block;
-        width: 100%;
-        height: 1px;
-        -webkit-transform: rotate(-20deg);
-        transform: rotate(-20deg);
-        //center the X vertically and horizontally:
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    &:after {
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-    }
-}
-
 .carousel{
   padding-bottom: 50px;
   .carousel-indicators{
