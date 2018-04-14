@@ -1,13 +1,15 @@
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: @font-secondary;
     background-color: @black;
     .navbar-toggle {
-        color: white;
+        color: @white;
         background-color: @primary-green;
         font-size: 12px;
+        &:hover {
+          background-color: fade(@primary-green, 80%);
+        }
         &:focus,
         &:active {
             outline: none;
@@ -20,7 +22,7 @@
         }
     }
     a {
-        color: white;
+        color: @white;
     }
     .nav {
         li {
@@ -29,7 +31,7 @@
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: fade(white, 50%);
+                    color: fade(@white, 70%);
                     outline: none;
                     background-color: transparent;
                 }
@@ -44,7 +46,7 @@
                 a {
                     background-color: @primary-green;
                     &:hover {
-                        color: white;
+                        color: @white;
                     }
                 }
             }
@@ -61,7 +63,7 @@
         &.top-nav-collapse {
             padding: 0;
             background: black;
-            border-bottom: 1px solid fade(white, 30%);
+            border-bottom: 1px solid fade(@white, 30%);
         }
     }
 }
