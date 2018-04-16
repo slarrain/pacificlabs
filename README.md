@@ -7,9 +7,28 @@ Code base for the PacificLabs website.
 * Run `npm install` at the root folder
 * Open `index.html` in the browser
 
-## Develop and Update
+#### Start Local Dev
 * Run `npm install` at the root folder
 * Run `gulp dev` to compile and watch changes
+
+#### CSS Compilation
+Custom CSS is compiled from less files in `less` folder
+* Background image of the intro section can be changed in `less/intro.less`
+* Background image of the services section can be changed in `less/sections.less`
+
+#### Content Update
+All content updates happen in `index.html`
+* To update `clients` section — Navigate to `<!-- Clients Section -->`
+  1. Save a square logo preferrably 150px by 150px in `img/logos`
+  2. Update `src` attribute to match the saved logo name in `<img class="logo" src="../img/logos/logo_150x150.png" />`
+  3. To add a second row of logos — copy and paste the entire div `<div class="row text-center">`
+* To update `testimonials` section — Navigate to `<!-- Testimonials Section -->`
+  1. Replace the lorem ipsum text in `<p>`
+  2. Add or remove a `<div class="item container">` and the corresponding indicator `<li>` under `<!-- Indicators -->` to add or remove a testimonials quote slide
+* To update `team` section — Navigate to `<!-- Team Section -->`.
+  1. Update replace holder text
+  2. Add or remove `<div class="profile col-md-4 col-sm-6">` to add or remove a profile
+
 
 
 ## Credit
