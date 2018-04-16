@@ -29,6 +29,15 @@ All content updates happen in `index.html`
   1. Update replace holder text
   2. Add or remove `<div class="profile col-md-4 col-sm-6">` to add or remove a profile
 
+#### Hide An Entire Section
+Use `template` branch as a starter branch and refer to its [index.html](https://github.com/slarrain/pacificlabs/blob/develop/index.html) as the template with all sections
+  1. In `develop` branch remove the the entire section from `index.html` and PR into master to update the site
+  2. Don't forget to also remove or add back the anchor link in the navbar for the corresponding section, e.g.
+  ```
+  <li>
+      <a class="page-scroll" href="#testimonials">Testimonials</a>
+  </li>
+  ```
 
 
 ## Credit
