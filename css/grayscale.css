@@ -270,10 +270,26 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+}
+.carousel .carousel-inner .item .row-wrap {
+  flex-wrap: wrap;
 }
 .quote {
   font-size: 5rem;
   color: #212121;
+}
+.quote-by {
+  font-weight: 700;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: .5rem;
+}
+.quote-by-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  width: 100%;
 }
 #map {
   width: 100%;
