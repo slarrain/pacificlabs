@@ -24,10 +24,12 @@ All content updates happen in `index.html`
   3. To add a second row of logos — copy and paste the entire div `<div class="row text-center">`
 * To update `testimonials` section — Navigate to `<!-- Testimonials Section -->`
   1. Replace the lorem ipsum text in `<p>`
-  2. Add or remove a `<div class="item container">` and the corresponding indicator `<li>` under `<!-- Indicators -->` to add or remove a testimonials quote slide
+  2. Use the `<!-- Quote by -->` example to add an optional name and title for the quote provider
+  3. Add or remove a `<div class="item container">` and the corresponding indicator `<li>` under `<!-- Indicators -->` to add or remove a testimonials quote slide
 * To update `team` section — Navigate to `<!-- Team Section -->`.
-  1. Update replace holder text
-  2. Add or remove `<div class="profile col-md-4 col-sm-6">` to add or remove a profile
+  1. Update `src` attribute to match the saved profile picture name in `<img class="profile-image" src="../img/profiles/profile_150x150.png" />`
+  2. Update replace holder text
+  3. Add or remove `<div class="profile col-md-4 col-sm-6">` to add or remove a profile
 
 #### Hide An Entire Section
 Use `template` branch as a starter branch and refer to its [index.html](https://github.com/slarrain/pacificlabs/blob/develop/index.html) as the template with all sections
