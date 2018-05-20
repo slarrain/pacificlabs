@@ -403,6 +403,15 @@ ul.list-block li p {
 .profile-detail {
   font-size: 1.8rem;
 }
+.profile-social-media {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-social-media i {
+  color: white;
+  font-size: 2.2rem;
+}
 .card {
   color: #fff;
   background: linear-gradient(#00796B, #1A237E);
